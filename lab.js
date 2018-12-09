@@ -67,7 +67,7 @@ class Student {
 
 		let indexStudentsSearch = new Array();
 		for (let i = 0; i < students.length; i++) {
-			let student = students[i];
+			let student = this.getStudentByIndex(i);
 			if (student[propertiesName] !== undefined) {
 				let propertiesValue = student[propertiesName];
 				if (typeof value == 'string' || typeof propertiesValue == 'string') {
